@@ -17,36 +17,18 @@
 
 
 # Handling Missing Values
-
-There are sevral ways to handel missing data, we can either drop them, or try fill the data using our data intuitio. First we have to count how many missing rows are there, and what's the percentage of these null values. 
-
-
-### Sql approach 
-
-We can import sql library in pandas. <br>
-
-
-The !pip install pandasql command installs the pandasql library, which allows you to use SQL-like syntax to query pandas dataframes.
-
-                  #installing panda's sql library 
-                  !pip install pandasql
-
-
-
-
-                  #importing panda's sql library 
-                  from pandasql import sqldf
-                  #define a landa function for pandas' dataframe
-                  pysqldf = lambda q: sqldf(q, globals())
-
-                  #import sql 
-                  query = '''SELECT * FROM sf_permits WHERE 'NULL' IS NULL'''
-                  # set python sql dataframe to query
-                  result = pysqldf(query)
-                  #print the sql query
-                  result
-
-### Pandas' approach
+The procces of cleaning data: <br>
+1. read cvs file
+2. show the head() of the data
+3. use isnull() pandas' function to see the number of null rows in the dataset
+4. count the total of null value using sum() functuin
+5. find the shape of this dataset (rows & colms)
+6. find the product of the data; meaning rows*columns, <br>
+which you can do uding numpy function product; data_cells = np.product(mydata.shape)
+7. find the percentage of these missing data; percetage = ((total_of_missing_values)/(data_cells))*100
+8. use your data intution to know why these values were missing; not recorded or don't exixit. 
+9. if the missing vlues are 80% and above we will delete the row or the column
+10. we can fill the null values with mean, median, mode or 0 or any other values
 
 
 # Scaling and Normalization
