@@ -23,10 +23,15 @@ There are sevral ways to handel missing data, we can either drop them, or try fi
 
 ### Sql approach 
 
-We can import sql library in pandas
+We can import sql library in pandas. <br>
+
+
+The !pip install pandasql command installs the pandasql library, which allows you to use SQL-like syntax to query pandas dataframes.
 
                   #installing panda's sql library 
                   !pip install pandasql
+
+
 
 
                   #importing panda's sql library 
