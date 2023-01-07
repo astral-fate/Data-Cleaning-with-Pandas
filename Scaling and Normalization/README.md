@@ -2,13 +2,13 @@
 
 # Types of scaling
 
-## Max absolute scaling
+# Max absolute scaling
 
-## Min-Max Scaling
+# Min-Max Scaling
 
 In the Min-Max Scaling, there are two approaches we can follow, the automatic one, or the manual one:
 
-# The manual approach
+## The manual approach
 
 insteam of implementing the module, we can implement the mini-max scaling by hand following these fourmlas:
 
@@ -16,7 +16,7 @@ insteam of implementing the module, we can implement the mini-max scaling by han
  (value - min) / (max - min)
  
  
- # The automatic approach
+ ## The automatic approach
  
  we can install the module which named as mlxtend, by follwoing these commands: <br>
  
