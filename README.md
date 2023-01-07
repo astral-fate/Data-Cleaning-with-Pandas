@@ -42,6 +42,7 @@ Steps to prase the dates:
 4. manually modify the dates if they are entired in inncorrect way using .loc
 5. cast the data type from object to the specfic format such as <b> format="%m/%d/%Y" </b>
 6. Visualze the data to double check. Use the seaborn library as: sns.distplot(column, kde=False, bins=31)
+7. Access certian day or month as follows: day_of_month_earthquakes = earthquakes['date_parsed'].dt.month or day_of_month_earthquakes = earthquakes['date_parsed'].dt.day
 
 
 we have to first check the type of the column as follows:
