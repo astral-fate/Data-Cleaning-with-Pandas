@@ -35,6 +35,32 @@ which you can do uding numpy function product; data_cells = np.product(mydata.sh
 
 # Parsing Dates
 
+Steps to prase the dates:
+1. find the data types
+2. display the column 
+3. check the length of the date 
+4. manually modify the dates if they are entired in inncorrect way using .loc
+5. cast the data type from object to the specfic format such as <b> format="%m/%d/%Y" </br>
+6. Visualze the data to double check. Use the seaborn library as: sns.distplot(column, kde=False, bins=31)
+
+
+we have to first check the type of the column as follows:
+
+      mydataframe['mycolumn'].dtype
+
+dtype is a short cut for data type.
+
+
+then show a portion of the data to check:
+
+        mydataframe[300:400]
+        
+we then see the length of these indeses:
+
+        date_lengths = earthquakes.Date.str.len()
+        date_lengths.value_counts()
+
+
 # Character Encodings
 
 # Inconsistent Data Entry
