@@ -40,7 +40,7 @@ Steps to prase the dates:
 2. display the column 
 3. check the length of the date 
 4. manually modify the dates if they are entired in inncorrect way using .loc
-5. cast the data type from object to the specfic format such as <b> format="%m/%d/%Y" </br>
+5. cast the data type from object to the specfic format such as <b> format="%m/%d/%Y" </b>
 6. Visualze the data to double check. Use the seaborn library as: sns.distplot(column, kde=False, bins=31)
 
 
